@@ -331,7 +331,7 @@ void Slime::update(float current_time, float delta_time)
 Troll::Troll(vector2f spawn_point):
     Enemy(spawn_point, {0, 0, 32, 32})
 {
-    health_point = 5;
+    health_point = 1;
     speed = 28 + rng() % 3;
     state = 0;
     wait = 0;
@@ -536,7 +536,7 @@ void Troll::update(float current_time, float delta_time)
 Orc::Orc(vector2f spawn_point):
     Enemy(spawn_point, {0, 0, 96, 64})
 {
-    health_point = 12;
+    health_point = 1;
     speed = 15 + rng() % 3;
     state = 0;
     wait = 0;
@@ -765,7 +765,7 @@ void Orc::update(float current_time, float delta_time)
 Skeleton::Skeleton(vector2f spawn_point):
     Enemy(spawn_point, {0, 0, 32, 32})
 {
-    health_point = 4;
+    health_point = 1;
     speed = 30 + rng() % 3;
     attack = false;
     texture = main_window.load_texture("skeleton.png");
@@ -1053,7 +1053,7 @@ void Projectile::update(float current_time, float delta_time)
 Neucromancer::Neucromancer(vector2f spawn_point):
     Enemy(spawn_point, {0, 0, 48, 48})
 {
-    health_point = 20;
+    health_point = 1;
     speed = 15;
     state = 0;
     wait = 0;
